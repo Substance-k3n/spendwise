@@ -1,8 +1,8 @@
 {
-  "name": "expenseflow",
+  "name": "spendwise",
   "private": true,
   "version": "0.1.0",
-  "description": "ExpenseFlow — company expense submission, approval, budgets and reimbursements.",
+  "description": "SpendWise — company expense submission, approval, budgets and reimbursements.",
   "packageManager": "pnpm@12.3.4",
   "engines": {
     "node": ">=22.12.0"
@@ -17,8 +17,8 @@
     "format:check": "prettier --check .",
     "db:up": "docker compose -f infra/docker/docker-compose.yml up -d",
     "db:down": "docker compose -f infra/docker/docker-compose.yml down",
-    "db:migrate": "pnpm --filter @expenseflow/api db:migrate",
-    "db:studio": "pnpm --filter @expenseflow/api db:studio"
+    "db:migrate": "pnpm --filter @spendwise/api db:migrate",
+    "db:studio": "pnpm --filter @spendwise/api db:studio"
   },
   "devDependencies": {
     "prettier": "^3.9.10",

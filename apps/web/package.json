@@ -1,5 +1,5 @@
 {
-  "name": "@expenseflow/web",
+  "name": "@spendwise/web",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,13 +13,13 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@expenseflow/shared": "workspace:*",
+    "@spendwise/shared": "workspace:*",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router": "^8.5.1"
   },
   "devDependencies": {
-    "@expenseflow/config": "workspace:*",
+    "@spendwise/config": "workspace:*",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@types/react": "^19.3.0",

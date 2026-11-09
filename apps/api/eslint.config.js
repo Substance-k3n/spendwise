@@ -1,3 +1,3 @@
-import base from '@expenseflow/config/eslint/base';
+import base from '@spendwise/config/eslint/base';
 
 export default base;

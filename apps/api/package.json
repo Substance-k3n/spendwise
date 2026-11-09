@@ -1,5 +1,5 @@
 {
-  "name": "@expenseflow/api",
+  "name": "@spendwise/api",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,7 +19,7 @@
     "db:generate": "prisma generate"
   },
   "dependencies": {
-    "@expenseflow/shared": "workspace:*",
+    "@spendwise/shared": "workspace:*",
     "@prisma/adapter-pg": "7.10.1",
     "@prisma/client": "7.10.1",
     "cors": "^2.8.6",
@@ -28,7 +28,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@expenseflow/config": "workspace:*",
+    "@spendwise/config": "workspace:*",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^22.19.0",

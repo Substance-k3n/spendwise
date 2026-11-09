@@ -1,5 +1,5 @@
 {
-  "name": "@expenseflow/shared",
+  "name": "@spendwise/shared",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,7 +15,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@expenseflow/config": "workspace:*",
+    "@spendwise/config": "workspace:*",
     "eslint": "^10.14.0",
     "typescript": "~6.0.3"
   }

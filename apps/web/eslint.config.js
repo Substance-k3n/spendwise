@@ -1,3 +1,3 @@
-import react from '@expenseflow/config/eslint/react';
+import react from '@spendwise/config/eslint/react';
 
 export default react;

@@ -1,4 +1,4 @@
-import { API_PREFIX } from '@expenseflow/shared';
+import { API_PREFIX } from '@spendwise/shared';
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';

@@ -1,4 +1,4 @@
-import type { ApiErrorBody } from '@expenseflow/shared';
+import type { ApiErrorBody } from '@spendwise/shared';
 import type { ErrorRequestHandler, RequestHandler } from 'express';
 import { ZodError } from 'zod';
 import { AppError } from '../utils/app-error';

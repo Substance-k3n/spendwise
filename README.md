@@ -1,4 +1,4 @@
-# ExpenseFlow
+# SpendWise
 
 Company expense management: employees submit expenses, managers approve them, finance tracks
 budgets and pays reimbursements.
@@ -27,8 +27,8 @@ are installed with one command.
 ### 2. Set up the project
 
 ```bash
-git clone git@github.com:Rediet-W/expenseflow.git
-cd expenseflow
+git clone git@github.com:Substance-k3n/spendwise.git
+cd spendwise
 git switch dev
 
 pnpm install                              # installs everything for every app
@@ -66,12 +66,12 @@ Run these from the repo root. They run for every app at once.
 | `pnpm db:studio`  | Opens Prisma Studio to browse the database       |
 
 To run a command for one app only, add a filter:
-`pnpm --filter @expenseflow/api test` or `pnpm --filter @expenseflow/web dev`.
+`pnpm --filter @spendwise/api test` or `pnpm --filter @spendwise/web dev`.
 
 ## Folder structure
 
 ```
-expenseflow/
+spendwise/
 ├── apps/
 │   ├── api/                      Backend (Express + Prisma)
 │   │   ├── prisma/
@@ -150,7 +150,7 @@ If something is needed by two or more features, move it up to `src/components`, 
 ### Shared code
 
 Anything both apps need to agree on goes in `packages/shared` and is imported from
-`@expenseflow/shared`: request/response types, enums like expense statuses and user roles, and Zod
+`@spendwise/shared`: request/response types, enums like expense statuses and user roles, and Zod
 schemas. Define a schema once there; the API uses it to validate and the web app uses it for forms.
 
 ## Working on the project

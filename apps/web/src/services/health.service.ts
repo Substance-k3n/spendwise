@@ -1,4 +1,4 @@
-import { type HealthResponse, healthResponseSchema } from '@expenseflow/shared';
+import { type HealthResponse, healthResponseSchema } from '@spendwise/shared';
 import { apiRequest } from '../lib/api-client';
 
 export async function getHealth(): Promise<HealthResponse> {

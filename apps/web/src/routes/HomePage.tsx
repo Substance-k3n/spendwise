@@ -1,4 +1,4 @@
-import type { HealthResponse } from '@expenseflow/shared';
+import type { HealthResponse } from '@spendwise/shared';
 import { useEffect, useState } from 'react';
 import { getHealth } from '../services/health.service';
 
@@ -16,7 +16,7 @@ export function HomePage() {
 
   return (
     <main className="page">
-      <h1>ExpenseFlow</h1>
+      <h1>SpendWise</h1>
       {error && <p role="alert">API unreachable: {error}</p>}
       {!error && !health && <p>Checking the API…</p>}
       {health && (

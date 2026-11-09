@@ -1,6 +1,6 @@
 # Contributing
 
-How we work on ExpenseFlow. Set up the project first with the steps in the [README](README.md).
+How we work on SpendWise. Set up the project first with the steps in the [README](README.md).
 
 ## Branches
 

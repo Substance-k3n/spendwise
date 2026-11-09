@@ -1,5 +1,5 @@
 {
-  "extends": "@expenseflow/config/typescript/react.json",
+  "extends": "@spendwise/config/typescript/react.json",
   "compilerOptions": {
     "types": ["vite/client", "@testing-library/jest-dom/vitest"]
   },

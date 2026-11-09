@@ -17,18 +17,18 @@ jobs:
       postgres:
         image: postgres:17-alpine
         env:
-          POSTGRES_USER: expenseflow
-          POSTGRES_PASSWORD: expenseflow
-          POSTGRES_DB: expenseflow
+          POSTGRES_USER: spendwise
+          POSTGRES_PASSWORD: spendwise
+          POSTGRES_DB: spendwise
         ports:
           - 5432:5432
         options: >-
-          --health-cmd "pg_isready -U expenseflow -d expenseflow"
+          --health-cmd "pg_isready -U spendwise -d spendwise"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
     env:
-      DATABASE_URL: postgresql://expenseflow:expenseflow@localhost:5432/expenseflow
+      DATABASE_URL: postgresql://spendwise:spendwise@localhost:5432/spendwise
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
@@ -53,7 +53,7 @@ jobs:
         run: pnpm typecheck
 
       - name: Apply database migrations
-        run: pnpm --filter @expenseflow/api db:deploy
+        run: pnpm --filter @spendwise/api db:deploy
 
       - name: Test
         run: pnpm test

@@ -1,4 +1,4 @@
-import type { HealthResponse } from '@expenseflow/shared';
+import type { HealthResponse } from '@spendwise/shared';
 import { prisma } from '../../lib/prisma';
 
 // Services hold the logic and talk to the database. They know nothing about HTTP.

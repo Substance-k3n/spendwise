@@ -1,4 +1,4 @@
-import { API_PREFIX, type ApiErrorBody } from '@expenseflow/shared';
+import { API_PREFIX, type ApiErrorBody } from '@spendwise/shared';
 
 const baseUrl = `${import.meta.env.VITE_API_URL ?? ''}${API_PREFIX}`;
 

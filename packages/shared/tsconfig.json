@@ -1,5 +1,5 @@
 {
-  "extends": "@expenseflow/config/typescript/base.json",
+  "extends": "@spendwise/config/typescript/base.json",
   "compilerOptions": {
     "lib": ["ES2023"]
   },

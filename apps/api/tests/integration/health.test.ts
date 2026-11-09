@@ -1,6 +1,6 @@
 import request from 'supertest';
 import { describe, expect, it } from 'vitest';
-import { healthResponseSchema } from '@expenseflow/shared';
+import { healthResponseSchema } from '@spendwise/shared';
 import { createApp } from '../../src/app';
 
 // Needs the database running (`pnpm db:up`) and DATABASE_URL set.
