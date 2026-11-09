@@ -1,0 +1,7 @@
+{
+  "extends": "@expenseflow/config/typescript/react.json",
+  "compilerOptions": {
+    "types": ["vite/client", "@testing-library/jest-dom/vitest"]
+  },
+  "include": ["src", "tests", "vite.config.ts"]
+}

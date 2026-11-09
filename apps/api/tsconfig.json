@@ -1,0 +1,4 @@
+{
+  "extends": "@expenseflow/config/typescript/node.json",
+  "include": ["src", "tests", "prisma", "prisma.config.ts", "tsdown.config.ts", "vitest.config.ts"]
+}
