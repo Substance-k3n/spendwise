@@ -1,0 +1,22 @@
+{
+  "name": "@expenseflow/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Types, enums, constants and zod schemas shared by apps/api and apps/web.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@expenseflow/config": "workspace:*",
+    "eslint": "^10.14.0",
+    "typescript": "~6.0.3"
+  }
+}

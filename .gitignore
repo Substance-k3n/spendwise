@@ -1,8 +1,27 @@
+# dependencies
 node_modules/
+
+# builds and caches
 dist/
 build/
-.env
-*.log
-.DS_Store
-uploads/
 coverage/
+.turbo/
+*.tsbuildinfo
+
+# Prisma client is generated on install (pnpm install runs prisma generate)
+apps/api/src/generated/
+
+# env files — commit only .env.example
+.env
+.env.*
+!.env.example
+
+# uploads and logs
+uploads/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

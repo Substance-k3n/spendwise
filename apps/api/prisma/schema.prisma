@@ -1,0 +1,12 @@
+// Database schema. Add a model here, then run `pnpm db:migrate` from the
+// repo root to create a migration and regenerate the client.
+// Docs: https://www.prisma.io/docs/orm/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}

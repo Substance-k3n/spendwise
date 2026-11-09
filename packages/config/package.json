@@ -1,0 +1,25 @@
+{
+  "name": "@expenseflow/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared TypeScript and ESLint settings used by every app and package.",
+  "exports": {
+    "./typescript/base.json": "./typescript/base.json",
+    "./typescript/node.json": "./typescript/node.json",
+    "./typescript/react.json": "./typescript/react.json",
+    "./eslint/base": "./eslint/base.js",
+    "./eslint/react": "./eslint/react.js"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.14.0",
+    "typescript-eslint": "^8.72.1"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  }
+}

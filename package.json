@@ -1,0 +1,28 @@
+{
+  "name": "expenseflow",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ExpenseFlow — company expense submission, approval, budgets and reimbursements.",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:up": "docker compose -f infra/docker/docker-compose.yml up -d",
+    "db:down": "docker compose -f infra/docker/docker-compose.yml down",
+    "db:migrate": "pnpm --filter @expenseflow/api db:migrate",
+    "db:studio": "pnpm --filter @expenseflow/api db:studio"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "turbo": "^2.11.10",
+    "typescript": "~6.0.3"
+  }
+}
